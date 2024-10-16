@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}Noticias{% endblock %}
+
+{% block content %}
+    <section class="news">
+        <h1 style="color: #FF5733; text-align: center; font-size: 2.5em; margin-bottom: 20px;">Últimas Noticias</h1>
+
+    <div class="news-item">
+        <img src="{{ url_for('static', filename='img/news1.png') }}" alt="Noticia 1">
+        <h2>Nueva Aplicación Lanzada</h2>
+        <p>Estamos emocionados de anunciar el lanzamiento de nuestra última aplicación que promete revolucionar la forma en que gestionas tu negocio.</p>
+        
+    </div>
+
+    <div class="news-item">
+        <img src="{{ url_for('static', filename='img/news2.png') }}" alt="Noticia 2">
+        <h2>Asociación Estratégica</h2>
+        <p>Nos hemos asociado con una de las empresas más innovadoras del sector para ofrecer mejores soluciones a nuestros clientes.</p>
+       
+    </div>
+
+    <div class="news-item">
+        <img src="{{ url_for('static', filename='img/news3.png') }}" alt="Noticia 3">
+        <h2>Evento de Innovación</h2>
+        <p>Participamos en un evento internacional donde presentamos nuestras últimas innovaciones en tecnología.</p>
+        
+    </div>
+
+    <div class="news-item">
+        <img src="{{ url_for('static', filename='img/news4.png') }}" alt="Noticia 4">
+        <h2>Premios y Reconocimientos</h2>
+        <p>Recibimos el premio a la mejor empresa de tecnología en el último evento de la industria.</p>
+        
+    </div>
+    </section>
+{% endblock %}

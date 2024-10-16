@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}Quiénes Somos{% endblock %}
+
+{% block content %}
+    <section class="about">
+        <h2>Nuestra Historia</h2>
+    <p>Fundada en 2024, DQP APPLE nació de la necesidad de ofrecer soluciones tecnológicas innovadoras a empresas de todos los tamaños. Desde nuestros inicios, hemos trabajado incansablemente para posicionarnos como un referente en el sector, brindando servicios de alta calidad que realmente impactan a nuestros clientes.</p>
+
+    <h2>Misión</h2>
+    <p>Nuestra misión es proveer tecnología que mejore la vida de las personas y optimice los procesos empresariales, creando un mundo más conectado y eficiente.</p>
+
+    <h2>Visión</h2>
+    <p>Aspiramos a ser líderes en innovación tecnológica, ofreciendo soluciones que transformen el futuro de las empresas y la sociedad.</p>
+
+    <h2>Nuestro Equipo</h2>
+    <p>Contamos con un equipo de profesionales apasionados y comprometidos que se especializan en diversas áreas de la tecnología. Cada uno aporta su experiencia única para ofrecer soluciones personalizadas y efectivas.</p>
+    
+    <div class="team">
+        <div class="team-member">
+            <img src="{{ url_for('static', filename='img/team1.png') }}" alt="Miembro del Equipo 1">
+            <h3>Laura Fernández</h3>
+            <p>Desarrolladora de Software</p>
+            <p>Con más de 5 años de experiencia, Laura es una experta en desarrollo ágil y trabaja incansablemente para crear soluciones eficientes y efectivas.</p>
+        </div>
+        <div class="team-member">
+            <img src="{{ url_for('static', filename='img/team2.png') }}" alt="Miembro del Equipo 2">
+            <h3>Pedro Martínez</h3>
+            <p>Consultor Tecnológico</p>
+            <p>Pedro ayuda a las empresas a implementar soluciones tecnológicas, asegurando que cada cliente obtenga el máximo beneficio de su inversión.</p>
+        </div>
+        <div class="team-member">
+            <img src="{{ url_for('static', filename='img/team3.png') }}" alt="Miembro del Equipo 3">
+            <h3>María López</h3>
+            <p>Gerente de Proyectos</p>
+            <p>Con habilidades excepcionales en gestión de proyectos, María garantiza que cada proyecto se complete a tiempo y dentro del presupuesto.</p>
+        </div>
+    </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}Servicios{% endblock %}
+
+{% block content %}
+    <section class="services">
+        <h1 style="color: #FF5733; text-align: center; font-size: 2.5em; margin-bottom: 20px;">Nuestros Servicios</h1>
+
+    <div class="service">
+        <img src="{{ url_for('static', filename='img/service1.png') }}" alt="Desarrollo de Software">
+        <h2>Desarrollo de Software</h2>
+        <p>Ofrecemos soluciones de software personalizadas que se adaptan a las necesidades específicas de tu negocio. Desde aplicaciones móviles hasta sistemas de gestión, ¡tenemos lo que necesitas!</p>
+        <a href="/services/software" class="read-more">Leer más</a>
+    </div>
+
+    <div class="service">
+        <img src="{{ url_for('static', filename='img/service2.png') }}" alt="Consultoría Tecnológica">
+        <h2>Consultoría Tecnológica</h2>
+        <p>Nuestros expertos en tecnología te ayudarán a implementar soluciones innovadoras que optimizarán tus procesos y aumentarán tu competitividad en el mercado.</p>
+        <a href="/services/consulting" class="read-more">Leer más</a>
+    </div>
+
+    <div class="service">
+        <img src="{{ url_for('static', filename='img/service3.png') }}" alt="Soporte Técnico">
+        <h2>Soporte Técnico</h2>
+        <p>Ofrecemos un soporte técnico excepcional para garantizar que tu infraestructura tecnológica funcione sin problemas. Estamos aquí para ayudarte en cualquier momento.</p>
+        <a href="/services/support" class="read-more">Leer más</a>
+    </div>
+
+    <div class="service">
+        <img src="{{ url_for('static', filename='img/service4.png') }}" alt="Capacitación y Formación">
+        <h2>Capacitación y Formación</h2>
+        <p>Ofrecemos programas de capacitación diseñados para equipar a tu equipo con las habilidades necesarias para aprovechar al máximo las herramientas tecnológicas.</p>
+        <a href="/services/training" class="read-more">Leer más</a>
+    </div>
+    </section>
+{% endblock %}

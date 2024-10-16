@@ -1,0 +1,389 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Fondo claro */
+    color: #333; /* Texto oscuro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #d32f2f; /* Rojo brillante */
+    color: #ffffff; /* Texto blanco */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo {
+    max-width: 150px; /* Ajustar el tamaño del logo */
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff; /* Texto blanco */
+    text-decoration: none;
+    font-weight: bold; /* Negrita para los enlaces */
+    transition: color 0.3s; /* Transición suave para el color */
+}
+
+nav ul li a:hover {
+    color: #b2ff59; /* Verde claro al pasar el ratón */
+}
+
+/* Estilo principal */
+main {
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco */
+    margin: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+/* Secciones específicas */
+.hero {
+    background-color: #388e3c; /* Verde oscuro */
+    color: #ffffff;
+    padding: 40px;
+    text-align: center;
+}
+
+.cta-button {
+    background-color: #d32f2f; /* Rojo para el botón */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.cta-button:hover {
+    background-color: #ff6659; /* Rojo más claro al pasar el ratón */
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #333333; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos para formularios */
+.contact-form {
+    background-color: #f9f9f9; /* Fondo claro para el formulario */
+    padding: 15px;
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.btn-submit {
+    background-color: #388e3c; /* Verde oscuro para el botón */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.btn-submit:hover {
+    background-color: #66bb6a; /* Verde más claro al pasar el ratón */
+}
+
+/* Estilos para artículos de noticias y servicios */
+.news-item, .service {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd; /* Borde claro */
+    border-radius: 5px;
+    background-color: #fdfdfd; /* Fondo blanco para artículos */
+    transition: transform 0.2s; /* Transición suave */
+}
+
+.news-item:hover, .service:hover {
+    transform: scale(1.02); /* Efecto de aumento al pasar el ratón */
+    box-shadow: 0  4px 20px rgba(0, 0, 0, 0.2); /* Sombra al pasar el ratón */
+}
+/* Estilos para las secciones de noticias y servicios */
+.news-item img, .service img {
+    max-width: 100%; /* Imagen responsiva */
+    border-radius: 5px; /* Bordes redondeados en imágenes */
+}
+
+/* Estilos para la sección de mapa */
+.map {
+    margin-top: 20px; /* Margen superior para el mapa */
+    text-align: center; /* Centrar el mapa */
+}
+
+iframe {
+    border-radius: 10px; /* Bordes redondeados para el mapa */
+}
+
+/* Media Queries para mejorar la responsividad */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Cambia la navegación a bloque en pantallas pequeñas */
+        margin: 10px 0; /* Margen entre elementos */
+    }
+
+    .hero {
+        padding: 20px; /* Reduce el padding en pantallas pequeñas */
+    }
+
+    .cta-button {
+        padding: 10px 15px; /* Ajusta el padding del botón */
+    }
+}
+/* Sección de contacto */
+/* Estilos para la sección de contacto */
+.contact-form {
+    background-color: #2522d6; /* Fondo blanco para el formulario */
+    padding: 30px; /* Padding superior e inferior */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para el formulario */
+    margin: 20px auto; /* Centrado horizontal y margen */
+    max-width: 600px; /* Ancho máximo */
+}
+
+.contact-form label {
+    display: block; /* Cada etiqueta en una nueva línea */
+    margin: 15px 0 5px; /* Espaciado */
+    font-weight: bold; /* Negrita para las etiquetas */
+    color: #000000; /* Color verde para el texto */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%; /* Ancho completo */
+    padding: 12px; /* Espaciado interno */
+    border: 2px solid #d4cb72; /* Borde verde */
+    border-radius: 5px; /* Bordes redondeados */
+    box-sizing: border-box; /* Asegura que el padding no aumente el ancho */
+    margin-bottom: 15px; /* Espaciado inferior */
+    transition: border-color 0.3s; /* Transición de color del borde */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #FF5733; /* Borde rojo al enfocar */
+    outline: none; /* Sin contorno */
+}
+
+/* Botón de envío */
+.contact-form button {
+    background-color: #ca0f0f; /* Fondo verde */
+    color: rgb(255, 255, 255); /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 12px 20px; /* Espaciado */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-weight: bold; /* Negrita para el texto del botón */
+    transition: background-color 0.3s; /* Transición del fondo */
+    font-size: 16px; /* Tamaño de fuente */
+    width: 100%; /* Botón a ancho completo */
+}
+
+.contact-form button:hover {
+    background-color: #47055c; /* Cambia a rojo al pasar el ratón */
+}
+
+/* Estilos de información de contacto */
+.contact-info {
+    margin-top: 20px; /* Espaciado superior */
+    text-align: center; /* Centramos el texto */
+}
+
+/* Sección del mapa */
+.map {
+    margin-top: 20px; /* Margen superior para el mapa */
+    text-align: center; /* Centrar el mapa */
+    border: 2px solid #080e08; /* Borde verde alrededor del mapa */
+    border-radius: 10px; /* Bordes redondeados para el mapa */
+    overflow: hidden; /* Asegura que no se salgan los bordes */
+}
+
+iframe {
+    border-radius: 10px; /* Bordes redondeados para el mapa */
+}
+
+/* Media Queries para mejorar la responsividad */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 20px; /* Reduce el padding en pantallas pequeñas */
+    }
+}
+/*servicios*/
+/* Estilos para la sección Servicios */
+.service {
+    background-color: #f5ac7b; /* Fondo claro para cada servicio */
+    border: 2px solid #040335; /* Borde verde */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin: 15px; /* Margen alrededor de cada servicio */
+    text-align: center; /* Centramos el texto */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para los cuadros */
+    max-width: 300px; /* Ancho máximo para los servicios */
+    display: inline-block; /* Permite alinear los servicios en línea */
+}
+
+.service img {
+    width: 100%; /* Ancho completo para la imagen */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.service h2 {
+    color: #881505; /* Color verde para los nombres de servicios */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+.service p {
+    color: #140f0f; /* Color del texto */
+    margin-bottom: 15px; /* Margen inferior para el párrafo */
+}
+
+.read-more {
+    background-color: #a18116; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 10px 15px; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Efecto de transición */
+}
+
+.read-more:hover {
+    background-color: #c0392b; /* Color de fondo al pasar el ratón */
+}
+/*noticias*/
+/* Estilos para la sección Noticias */
+.news-item {
+    background-color: #97df53; /* Fondo claro para cada noticia */
+    border: 2px solid #035203; /* Borde verde */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin: 15px; /* Margen alrededor de cada noticia */
+    text-align: center; /* Centramos el texto */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para las noticias */
+}
+
+.news-item img {
+    width: 100%; /* Ancho completo para la imagen */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.news-item h2 {
+    color: #ec1109; /* Color verde para los títulos de las noticias */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+.news-item p {
+    color: #000000; /* Color del texto */
+    margin-bottom: 15px; /* Margen inferior para el párrafo */
+}
+
+.read-more {
+    background-color: #FF5733; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 10px 15px; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Efecto de transición */
+}
+
+.read-more:hover {
+    background-color: #c0392b; /* Color de fondo al pasar el ratón */
+}
+.news-item img, .service img {
+    width: 80%; /* Ajusta el ancho a 80% del contenedor */
+    max-width: 300px; /* Tamaño máximo de la imagen */
+    height: auto; /* Mantiene la relación de aspecto */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+/*inicio*/
+.hero {
+    background-color: #423e3e;
+    text-align: center;
+    padding: 40px;
+}
+
+.hero .logo {
+    width: 150px; /* Ajusta según el tamaño de tu logo */
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    color: #ee0909; /* Color rojo */
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.social-nav {
+    margin-top: 20px;
+}
+
+.social-button {
+    background-color: #1d3557; /* Color azul oscuro */
+    color: white;
+    padding: 10px 15px;
+    margin: 0 5px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.testimonials {
+    background-color: #a8dadc; /* Color verde claro */
+    padding: 20px;
+    text-align: center;
+}
+
+.testimonial {
+    margin: 15px 0;
+    font-style: italic;
+}
+
+.features {
+    padding: 20px;
+    text-align: center;
+}
+
+.features h2 {
+    color: #e63946; /* Color rojo */
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    margin: 10px 0;
+}
+
+.cta-button {
+    background-color: #e63946; /* Color rojo */
+    color: rgb(31, 8, 8);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
